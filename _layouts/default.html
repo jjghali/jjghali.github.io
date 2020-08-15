@@ -2,12 +2,26 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta content="{{site.data.profile.name}} - Portofolio" property="og:title">
+    <meta content="{{site.data.profile.name}} - Portofolio" property="og:site_name">
+    <meta content="website" property="og:type">
+    <meta content="{{site.data.profile.website}}" property="og:url">
+    <meta content="https://gravatar.com/avatar/9f2fa89587ad212290259b1227b54f15?size=200" property="og:image">
+    <meta content="{{site.data.profile.about-me}}" property="og:description">
+
+    <meta content="summary" name="twitter:card">
+    <meta content="{{site.data.profile.name}} - Portofolio" name="twitter:title">
+    <meta content="{{site.data.profile.about-me}}" name="twitter:description">
+    <meta content="https://gravatar.com/avatar/9f2fa89587ad212290259b1227b54f15?size=200" name="twitter:image">
+    <meta content="{{site.data.profile.twitter-handler}}" name="twitter:site">
+    <meta content="{{site.data.profile.twitter-handler}}" name="twitter:creator">
+
     <link href="styles/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
     <script src="resources/less.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/fontawesome-all.min.css" />
-    <meta charset="utf-8">
-    <title>Home</title>
+    <title>{{site.data.profile.name}} - Portofolio</title>
 </head>
 
 <body>
@@ -15,47 +29,50 @@
         <div class="w-full max-w-6xl mx-auto px-4 py-8 flex justify-between md:flex-no-wrap flex-wrap md:space-x-8">
             <div class="md:w-1/3 w-full">
                 <header>
-                    <img class="profile-pic" src="resources/profile.jpg" />
-                    <h3 class="profile-name font-medium text-3xl">Joshua Ghali</h3>
-                    <h4 class="profile-title font-medium text-1xl">Developer and tinkerer</h4>
+                    <img class="profile-pic" src="{{site.data.profile.profile-img}}" />
+                    <h3 class="profile-name font-medium text-3xl">{{site.data.profile.name}}</h3>
+                    <h4 class="profile-title font-medium text-1xl">{{site.data.profile.title}}</h4>
                 </header>
                 <section class="mt-5">
                     <h3 class="font-medium text-2xl">About me</h3>
-                    <div class="side-section">
+                    <div>
                         <div class="h-1 line-separator w-48 my-4"></div>
-                        <p class="side-content">
-                            blablablablablablablablablablablablablablablablablablablablablablablablablabla
+                        <p>
+                            {{site.data.profile.about-me}}
                         </p>
                     </div>
                 </section>
                 <section class="mt-5">
                     <h3 class="font-medium text-2xl">Goals</h3>
-                    <div class="side-section">
+                    <div>
                         <div class="h-1 line-separator w-48 my-4"></div>
-                        <p class="side-content">
-                            blablablablablablablablablablablablablablablablablablablablablablablablablabla
+                        <p>
+                            {{site.data.profile.goals}}
                         </p>
                     </div>
                 </section>
                 <section class="mt-5">
                     <h3 class="font-medium text-2xl">Specializations</h3>
-                    <div class="side-section">
+                    <div>
                         <div class="h-1 line-separator w-48 my-4"></div>
-                        <p class="side-content">
-                            blablablablablablablablablablablablablablablablablablablablablablablablablabla
-                        </p>
+                        <ul class="text-white list-disc list-inside">
+                            {%for spec in site.data.profile.specializations%}
+                            <li>{{spec}}</li>
+                            {%endfor%}
+                        </ul>
                     </div>
                 </section>
                 <section class="mt-5">
-                    <h3 class="font-medium text-2xl">Contact Info:</h3>
+                    <h3 class="font-medium text-2xl">Socials</h3>
                     <div class="h-1 line-separator w-48 my-4"></div>
 
                     <div class="text-white">
-                        <a href="" class="hover:underline flex items-center">
-                            <i class="mr-2 fab fa-linkedin"></i>
-                            LinkedIn
+                        {% for social in site.data.profile.socials %}
+                        <a href="{{social.url}}" class="hover:underline flex items-center">
+                            <i class="mr-2 fab {{social.icon}}"></i>
+                            {{social.name}}
                         </a>
-
+                        {%endfor%}
                     </div>
                 </section>
             </div>

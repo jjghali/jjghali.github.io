@@ -1,0 +1,30 @@
+---
+- company-name: Company 1
+  job-title: Job title 1
+  start-date: starteuh
+  end-date: endeuh
+  website: https://company.com
+  tasks:
+    - task 1
+    - task 2
+    - task 3
+
+- company-name: Company 2
+  job-title: Job title 2
+  start-date: starteuh
+  end-date: endeuh
+  website: https://company.com
+  tasks:
+    - task 1
+    - task 2
+    - task 3
+
+- company-name: Company 3
+  job-title: Job title 3
+  start-date: starteuh
+  end-date: endeuh
+  website: https://company.com
+  tasks:
+    - task 1
+    - task 2
+    - task 3

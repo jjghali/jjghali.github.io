@@ -1,14 +1,24 @@
 name: Joshua Ghali
 website: https://joshuaghali.com
 profile-img: resources/profile.jpg
-title: Developer, DevOps advisor and tinkerer
-about-me: blabla me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me 
-goals: got sum goals m8  goals m8  goals m8  goals m8  goals m8  goals m8  goals m8  goals m8  goals m8  goals m8  goals m8  goals m8 
+title: Developer/DevOps, software engineer to become and tinkerer
+about-me: 
+    I am Josh and I am a DevOps Specialist and Node.js developer. I am also a student in Software Engineering at École de technologie supérieure in Montréal.
+
 twitter-handle: "@jjghali"
-specializations:
-    - sum special
-    - moar special
+skills:
+    - TypeScript
+    - Node.js    
+    - Docker
+    - Github Actions
+    - Azure DevOps
 socials:
     - name: Linkedin
       icon: fa-linkedin
       url: https://www.linkedin.com/in/jjghali/
+    - name: Dev.to
+      icon: fa-dev
+      url: https://dev.to/jjghali
+    - name: Github
+      icon: fa-github
+      url: https://github.com/jjghali

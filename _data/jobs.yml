@@ -1,30 +1,26 @@
 ---
-- company-name: Company 1
-  job-title: Job title 1
-  start-date: starteuh
-  end-date: endeuh
-  website: https://company.com
+- company-name: Gologic
+  job-title: DevOps Specialist
+  start-date: January 2020
+  end-date: 
+  website: https://www.gologic.ca/
   tasks:
     - task 1
     - task 2
     - task 3
 
-- company-name: Company 2
-  job-title: Job title 2
-  start-date: starteuh
-  end-date: endeuh
-  website: https://company.com
+- company-name: Logient
+  job-title: Developer/DevOps
+  start-date: February 2017
+  end-date: January 2020
+  website: https://logient.com
   tasks:
-    - task 1
-    - task 2
-    - task 3
+    - Docker container orchestration.
+    - CI/CD pipeline creation with Azure DevOps
+    - Linux Virtual Machine maintenance and automatisation.
 
-- company-name: Company 3
-  job-title: Job title 3
+- company-name: Logient
+  job-title: .NET Developer (Internship)
   start-date: starteuh
   end-date: endeuh
-  website: https://company.com
-  tasks:
-    - task 1
-    - task 2
-    - task 3
+  website: https://logient.com  

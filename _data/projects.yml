@@ -1,3 +1,19 @@
-- project-name: Mah project
-  website: http://github.com
+- name: Newman reporter for PowerBI
+  url: https://github.com/jjghali/newman-reporter-powerbi
   description: blabla thingy blabla
+  icon: fab fa-github
+  tech: JavaScript
+
+- name: Release note generator
+  url: https://github.com/jjghali/releasenotes-generator
+  description: blabla thingy blabla
+  icon: fab fa-github
+  tech: TypeScript
+
+- name: Grades
+  url: https://github.com/jjghali/Grades
+  description: blabla thingy blabla
+  icon: fab fa-github
+  tech: Android
+ 
+  

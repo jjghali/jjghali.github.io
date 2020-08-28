@@ -6,13 +6,13 @@
 
 - name: Release note generator
   url: https://github.com/jjghali/releasenotes-generator
-  description: blabla thingy blabla
+  description: A small tool that generates release notes based on a GraphQL server which contains informations such as all the tasks coming from Jira and all the commits created on Bitbucket.
   icon: fab fa-github
   tech: TypeScript
 
 - name: Grades
   url: https://github.com/jjghali/Grades
-  description: blabla thingy blabla
+  description: Proof of concept for an Android mobile application made for students from ÉTS. This would allow a student to consult their class schedule and their grades.
   icon: fab fa-github
   tech: Android
  

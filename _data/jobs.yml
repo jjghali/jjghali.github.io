@@ -1,17 +1,19 @@
 ---
+- company-name: Desjardins
+  job-title: DevOps Consultant
+  start-date: January 2020
+  end-date: 
+  website: https://www.desjardins.com/
+
 - company-name: Gologic
   job-title: DevOps Specialist
   start-date: January 2020
   end-date: 
   website: https://www.gologic.ca/
-  tasks:
-    - task 1
-    - task 2
-    - task 3
-
+  
 - company-name: Logient
   job-title: Developer/DevOps
-  start-date: February 2017
+  start-date: June 2018
   end-date: January 2020
   website: https://logient.com
   tasks:
@@ -20,7 +22,13 @@
     - Linux Virtual Machine maintenance and automatisation.
 
 - company-name: Logient
+  job-title: .NET Developer
+  start-date: February 2017
+  end-date: June 2018
+  website: https://logient.com  
+
+- company-name: Logient
   job-title: .NET Developer (Internship)
-  start-date: starteuh
-  end-date: endeuh
+  start-date: January 2016
+  end-date: May 2016
   website: https://logient.com  

@@ -1,6 +1,6 @@
 - name: Newman reporter for PowerBI
   url: https://github.com/jjghali/newman-reporter-powerbi
-  description: blabla thingy blabla
+  description: A Newman reporter that allows pushing test results to a Power BI Realtime dataset.
   icon: fab fa-github
   tech: JavaScript
 

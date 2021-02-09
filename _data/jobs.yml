@@ -2,15 +2,19 @@
 - company-name: Desjardins
   job-title: DevOps Consultant
   start-date: January 2020
-  end-date: 
+  end-date:
   website: https://www.desjardins.com/
+  tasks:
+    - Release note and changelog page creation automation with a tool coded in Python.
+    - Monitoring and KPI with Newman and PowerBI.
+    - Added Jira and Bitbucket integration to a homemade GraphQL Server.
 
 - company-name: Gologic
   job-title: DevOps Specialist
   start-date: January 2020
-  end-date: 
+  end-date:
   website: https://www.gologic.ca/
-  
+
 - company-name: Logient
   job-title: Developer/DevOps
   start-date: June 2018
@@ -19,16 +23,16 @@
   tasks:
     - Docker container orchestration.
     - CI/CD pipeline creation with Azure DevOps
-    - Linux Virtual Machine maintenance and automatisation.
+    - Linux Virtual Machine maintenance and automation.
 
 - company-name: Logient
   job-title: .NET Developer
   start-date: February 2017
   end-date: June 2018
-  website: https://logient.com  
+  website: https://logient.com
 
 - company-name: Logient
   job-title: .NET Developer (Internship)
   start-date: January 2016
   end-date: May 2016
-  website: https://logient.com  
+  website: https://logient.com

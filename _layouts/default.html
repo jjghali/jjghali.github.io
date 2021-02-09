@@ -17,6 +17,7 @@
     <meta content="{{site.data.profile.twitter-handler}}" name="twitter:site">
     <meta content="{{site.data.profile.twitter-handler}}" name="twitter:creator">
 
+    <link rel="icon" href="resources/site-icon.png">
     <link href="styles/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
     <script src="resources/less.min.js"></script>
@@ -85,8 +86,8 @@
                     {% for job in site.data.jobs %}
                     <div class="mt-8 project">
                         <h4 class="font-medium text-2xl">{{ job.job-title }}</h4>
-                        <h5 class="text-xl"><a href="{{ job.website }}"
-                                class="hover:underline">{{ job.company-name }}</a> |
+                        <h5 class="text-xl"><a href="{{ job.website }}" class="hover:underline">{{ job.company-name
+                                }}</a> |
                             {%if job.end-date != %}
                             <i>{{ job.start-date }} - {{ job.end-date }}</i>
                             {%else%}
@@ -128,9 +129,10 @@
                     {% for edu in site.data.education %}
                     <div class="mt-8 project">
                         <h4 class="font-medium text-2xl">{{ edu.degree }}</h4>
-                        <h5 class="text-xl"><a href="{{ edu.website }}"
-                                class="hover:underline">{{ edu.school-name }}</a> |
-                            <i>{{ edu.start-year }} - {{ edu.graduation-year }}</i></h5>
+                        <h5 class="text-xl sub-title"><a href="{{ edu.website }}" class="hover:underline">{{
+                                edu.school-name }}</a> |
+                            <i>{{ edu.start-year }} - {{ edu.graduation-year }}</i>
+                        </h5>
                     </div>
                     {% endfor %}
                 </section>

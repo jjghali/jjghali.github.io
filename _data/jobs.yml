@@ -5,7 +5,7 @@
   end-date:
   website: https://www.desjardins.com/
   tasks:
-    - Release note and changelog page creation automation with a tool coded in Python.
+    - Release note and changelog page creation tool coded in Python.
     - Monitoring and KPI with Newman and PowerBI.
     - Added Jira and Bitbucket integration to a homemade GraphQL Server.
 

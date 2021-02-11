@@ -87,7 +87,8 @@
                     {% for job in site.data.jobs %}
                     <div class="mt-8 project">
                         <h4 class="font-medium text-2xl">{{ job.job-title }}</h4>
-                        <h5 class="text-xl"><a href="{{ job.website }}" class="hover:underline">{{ job.company-name
+                        <h5 class="text-xl sub-title"><a href="{{ job.website }}" class="hover:underline">{{
+                                job.company-name
                                 }}</a> |
                             {%if job.end-date != %}
                             <i>{{ job.start-date }} - {{ job.end-date }}</i>
@@ -116,7 +117,7 @@
                         </a>
                         <div class="pl-10">
 
-                            <h5 class="text-xl">{{ project.tech }}</h5>
+                            <h5 class="text-xl sub-title">{{ project.tech }}</h5>
                             <p>{{project.description}}</p>
                         </div>
 

@@ -1,3 +1,9 @@
+- name: Atlassian CLI (atlcli)
+  url: https://github.com/jjghali/atlassian-cli
+  description: A CLI application made for querying informations from Atlassian products. It can also create changelogs and delivery notes pages on Confluence.
+  icon: fab fa-github
+  tech: Python
+
 - name: Newman reporter for PowerBI
   url: https://github.com/jjghali/newman-reporter-powerbi
   description: A Newman reporter that allows pushing test results to a Power BI Realtime dataset.
@@ -15,5 +21,3 @@
   description: Proof of concept for an Android mobile application made for students from ÉTS. This would allow a student to consult their class schedule and their grades.
   icon: fab fa-github
   tech: Android
- 
-  

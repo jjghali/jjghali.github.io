@@ -10,6 +10,7 @@ $(document).ready(function () {
             }).then(() => {
                 $(".darkmodeicon > div > i").removeClass("fa-moon")
                 $(".darkmodeicon > div > i").addClass("fa-sun")
+                $(".eevee").attr("src", "resources/charmander.png")
             })
         }
         else {
@@ -20,6 +21,7 @@ $(document).ready(function () {
             }).then(() => {
                 $(".darkmodeicon > div > i").removeClass("fa-sun")
                 $(".darkmodeicon > div > i").addClass("fa-moon")
+                $(".eevee").attr("src", "resources/eevee.png")
             })
         }
 

@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  jekyll-serve:
+    image: jekyll/jekyll:4.2.0
+    ports:
+      - 4000:4000
+    environment:
+      - JEKYLL_ENV=development
+    volumes:
+      - $PWD/vendor/bundle:/usr/local/bundle:rw
+      - $PWD/:/srv/jekyll
+    command: jekyll serve

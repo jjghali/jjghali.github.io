@@ -2,6 +2,14 @@
 @secondary-color: #44bd32;
 @background-color: #181a1b;
 
+@primary-color-dark: #dfe6e9;
+@secondary-color-dark: #44bd32;
+@background-color-dark: #181a1b;
+
+@primary-color-light: #000000;
+@secondary-color-light: #40407A;
+@background-color-light: #D1CCC0;
+
 @profile-pic-size: 80px;
 
 @font-face {
@@ -95,8 +103,6 @@ html {
     align-content: center;
 }
 
-
-
 .profile-name {
     color: @secondary-color;
 }
@@ -122,10 +128,12 @@ html {
 }
 
 /* End Basic info */
-
-/* Resume content */
-
-/* End Resume content */
+.section-header,
+.list-item,
+.social-links
+{
+    color: @primary-color;
+}
 
 /*Misc*/
 .line-separator {
@@ -203,6 +211,36 @@ h5.sub-title {
     width: auto;
     height: 14px;
 }
+
+// Dark mode switcher
+.darkmode-switch{
+    color: @primary-color;
+}
+
+/* CHECKBOX TOGGLE SWITCH */
+/* @apply rules for documentation, these do not work as inline style */
+.toggle-checkbox:checked {
+  @apply: right-0 @secondary-color-light;
+  right: 0;
+  border-color: @secondary-color-light;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  @apply: bg-green-400;
+  background-color: @secondary-color-light;
+}
+
+.toggle-checkbox{
+  @apply: @secondary-color;
+  background-color: @primary-color;
+  border-color: @secondary-color;
+}
+
+.toggle-checkbox + .toggle-label {
+  @apply: bg-green-400;
+  background-color: @secondary-color;
+}
+
 
 @media only screen and (min-width: 768px) {
     .profile-header.w-5\/6 {

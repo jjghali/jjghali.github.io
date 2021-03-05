@@ -21,7 +21,9 @@
     <link rel="icon" href="resources/site-icon.png">
     <link href="styles/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
+    <script src="resources/jquery-3.6.0.slim.min.js"></script>
     <script src="resources/less.min.js"></script>
+    <script src="resources/darkmode.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/fontawesome-all.min.css" />
     <title>{{site.data.profile.page-title}}</title>
 </head>
@@ -40,7 +42,16 @@
                 <h4 class="profile-title ml-2 md:text-xl lg:visible invisible lg:h-auto h-0">{{site.data.profile.title}}
                 </h4>
             </div>
+            <div class="md:w-1/2">
+                <div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+                    <input type="checkbox" name="toggle" id="toggle"
+                        class="darkmode-toggle toggle-checkbox absolute block w-6 h-6 rounded-full border-4 appearance-none cursor-pointer" />
+                    <label for="toggle"
+                        class="toggle-label block overflow-hidden h-6 rounded-full cursor-pointer"></label>
+                </div>
+                <label for="toggle" class="text-xs text-gray-700"><i class="far fa-moon"></i></label>
 
+            </div>
         </div>
     </header>
 
@@ -72,7 +83,7 @@
                     <h3 class="font-medium text-2xl">Skills</h3>
                     <div>
                         <div class="h-1 line-separator w-48 my-2 md:my-4"></div>
-                        <ul class="text-white list-disc list-inside md:text-base text-sm">
+                        <ul class="list-item list-disc list-inside md:text-base text-sm">
                             {%for spec in site.data.profile.skills%}
                             <li>{{spec}}</li>
                             {%endfor%}
@@ -83,7 +94,7 @@
                     <h3 class="font-medium text-2xl">Socials</h3>
                     <div class="h-1 line-separator w-48 my-2 md:my-4"></div>
 
-                    <div class="text-white">
+                    <div class="social-links">
                         {% for social in site.data.profile.socials %}
                         <a href="{{social.url}}" class="hover:underline flex items-center">
                             <i class="mr-2 fab {{social.icon}}"></i>
@@ -95,7 +106,7 @@
             </div>
             <div class="md:w-2/3 w-full">
                 <section class="mt-4 mb-2">
-                    <h3 class="text-white font-medium md:text-3xl text-2xl">Experience</h3>
+                    <h3 class="section-header font-medium md:text-3xl text-2xl">Experience</h3>
                     <div class="h-1 line-separator w-48 md:my-4 my-2"></div>
                     {% for job in site.data.jobs %}
                     <div class="md:mt-8 mt-4 project">
@@ -110,7 +121,7 @@
                             <i>Current job since {{ job.start-date }}</i>
                             {%endif%}
                         </h5>
-                        <ul class="text-white list-disc list-inside md:text-base text-sm">
+                        <ul class="list-item list-disc list-inside md:text-base text-sm">
                             {%for task in job.tasks%}
                             <li>{{task}}</li>
                             {%endfor%}
@@ -119,7 +130,7 @@
                     {% endfor %}
                 </section>
                 <section class="mt-4 mb-2">
-                    <h3 class="text-white font-medium md:text-3xl text-2xl">Projects</h3>
+                    <h3 class="section-header font-medium md:text-3xl text-2xl">Projects</h3>
                     <div class="h-1 line-separator w-48 my-2 md:my-4"></div>
                     {% for project in site.data.projects %}
                     <div class="mt-8 project">
@@ -139,7 +150,7 @@
 
                 </section>
                 <section class="mt-4 mb-2">
-                    <h3 class="text-white font-medium md:text-3xl text-2xl">Education</h3>
+                    <h3 class="section-header font-medium md:text-3xl text-2xl">Education</h3>
                     <div class="h-1 line-separator w-48 my-2 md:my-4"></div>
                     {% for edu in site.data.education %}
                     <div class="md:mt-8 mt-4 project">
@@ -163,7 +174,7 @@
                     <h5 class="mx-auto font-medium text-base">Socials</h5>
                 </div>
 
-                <div class="text-white w-full flex justify-center">
+                <div class="social-links w-full flex justify-center">
                     {% for social in site.data.profile.socials %}
                     <a href="{{social.url}}" class="hover:underline mr-1 hover:underline text-sm">
                         <i class="mx-1 fab {{social.icon}}"></i>

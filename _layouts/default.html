@@ -1,9 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
+    
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta content="{{site.data.profile.about-me}}" name="description">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=5">
     <meta content="{{site.data.profile.page-title}}" property="og:title">
     <meta content="{{site.data.profile.page-title}}" property="og:site_name">
     <meta content="website" property="og:type">
@@ -32,7 +34,7 @@
     <header class="mt-2 w-full max-w-6xl md:mx-auto flex justify-between md:flex-no-wrap flex-wrap md:space-x-8">
         <div class="md:w-1/2 w-full flex flex-wrap">
             <div class="lg:w-auto w-1/6 md:my-auto mr-0 ml-0 align-middle">
-                <img class="profile-pic" src="{{site.data.profile.profile-img}}" />
+                <img class="profile-pic" alt="Profile picture" src="{{site.data.profile.profile-img}}" />
             </div>
 
             <div class="lg:w-9/12 w-4/6 my-auto lg:flex lg:flex-wrap">
@@ -188,7 +190,7 @@
         </div>
         <div class="w-full mt-2">
             <div class="flex items-center w-full">
-                <img class="mx-auto eevee" src="resources/eevee.png" />
+                <img class="mx-auto eevee" alt="Easter egg" src="resources/eevee.png" />
             </div>
         </div>
     </footer>

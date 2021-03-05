@@ -23,8 +23,8 @@
     <link rel="icon" href="resources/site-icon.png">
     <link href="styles/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
-    <script src="resources/jquery-3.6.0.slim.min.js"></script>
-    <script src="resources/less.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
     <script src="resources/darkmode.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/fontawesome-all.min.css" />
     <title>{{site.data.profile.page-title}}</title>
@@ -46,11 +46,12 @@
             </div>
             <div class="lg:w-auto w-1/6 flex justify-end my-auto">
                 <div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
-                    <input type="checkbox" name="toggle" id="toggle"
+                    <input type="checkbox" name="dark-toggle" id="toggle"
                         class="darkmode-toggle toggle-checkbox absolute block w-6 h-6 rounded-full border-4 appearance-none cursor-pointer" />
-                    <label for="toggle"
+                    <label for="dark-toggle"
                         class="toggle-label block overflow-hidden h-6 rounded-full cursor-pointer"></label>
                 </div>
+                <label for="toggle"></label>
                 <div class="darkmodeicon">
                     <div class="text-base "><i class="far fa-moon"></i></div>
                 </div>

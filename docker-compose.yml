@@ -1,13 +1,16 @@
 version: "3.7"
 
 services:
-  jekyll-serve:
-    image: jekyll/jekyll:4.2.0
+  portofolio_jekyll:
+    container_name: portofolio_jekyll
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - 4000:4000
     environment:
       - JEKYLL_ENV=development
     volumes:
-      - $PWD/vendor/bundle:/usr/local/bundle:rw
-      - $PWD/:/srv/jekyll
+      # - $PWD/vendor/bundle:/usr/local/bundle:rw
+      - $PWD:/srv/jekyll:rw
     command: jekyll serve

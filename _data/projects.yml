@@ -1,5 +1,5 @@
 - name: Atlassian CLI (atlcli)
-  url: https://github.com/jjghali/atlassian-cli
+  url: https://github.com/jjghali/atlcli
   description: A CLI application made for querying informations from Atlassian products. It can also create changelogs and delivery notes pages on Confluence.
   icon: fab fa-github
   tech: Python

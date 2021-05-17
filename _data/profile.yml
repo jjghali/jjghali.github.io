@@ -2,15 +2,16 @@ name: Joshua Ghali
 page-title: Joshua Ghali - DevOps
 website: https://joshuaghali.com
 profile-img: resources/profile.png
-title: Developer/DevOps, Software Engineering student and tinkerer
-about-me: I am Josh and I am a DevOps Specialist. I am also a student in Software Engineering at École de technologie supérieure in Montréal.
+title: Web Developer and DevOps, Software Engineering student and coffee drinker
+about-me: I am Josh and I am a Web Developer and a DevOps Specialist. I currently study in Software Engineering at École de technologie supérieure in Montréal.
 
 twitter-handle: "@jjghali"
 skills:
   - Python
-  - TypeScript/JavaScript
-  - Node.js
-  - Docker
+  - Vue.js
+  - TailwindCSS
+  - GraphQL
+  - TypeScript/JavaScript  
   - Github Actions
   - Azure DevOps
 socials:

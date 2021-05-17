@@ -82,18 +82,7 @@ layout: default
                             {{site.data.profile.about-me}}
                         </p>
                     </div>
-                </section>
-                {% if site.data.profile.goals != %}
-                <section class="mt-5 md:mt-2">
-                    <h3 class="font-medium text-2xl">Goals</h3>
-                    <div>
-                        <div class="h-1 line-separator w-48 my-2 md:my-4"></div>
-                        <p class="md:text-base text-sm">
-                            {{site.data.profile.goals}}
-                        </p>
-                    </div>
-                </section>
-                {% endif %}
+                </section>               
                 <section class="mt-5 md:mt-2">
                     <h3 class="font-medium text-2xl">Skills</h3>
                     <div>
@@ -130,7 +119,7 @@ layout: default
                                 class="hover:underline">{{
                                 job.company-name
                                 }}</a> |
-                            {%if job.end-date != %}
+                            {% if job.end-date %}
                             <i>{{ job.start-date }} - {{ job.end-date }}</i>
                             {%else%}
                             <i>Current job since {{ job.start-date }}</i>

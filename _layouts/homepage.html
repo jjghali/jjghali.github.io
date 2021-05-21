@@ -5,8 +5,8 @@ layout: default
 <!doctype html>
 <html lang="en">
 
-    <head>
-        
+<head>
+
     <title>{{site.data.profile.page-title}}</title>
     <meta charset="utf-8">
     <meta content="{{site.data.profile.about-me}}" name="description">
@@ -26,16 +26,17 @@ layout: default
     <meta content="{{site.data.profile.twitter-handler}}" name="twitter:creator">
 
     <link rel="icon" href="resources/site-icon.png">
-    <link href="styles/tailwind.min.css" rel="stylesheet" >
+    <link href="styles/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous" defer></script>
     <script src="//cdn.jsdelivr.net/npm/less@3.13" defer></script>
     <script src="resources/darkmode.js" defer></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css" async/>
-    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css" async />
+
     <script type="text/javascript">
-    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
-    heap.load("3939091651");
+        window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = document.createElement("script"); r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(r, a); for (var n = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], o = 0; o < p.length; o++)heap[p[o]] = n(p[o]) };
+        heap.load("3939091651");
     </script>
 
 </head>
@@ -44,7 +45,8 @@ layout: default
     <header class="mt-2 w-full max-w-6xl md:mx-auto flex justify-between md:flex-no-wrap flex-wrap md:space-x-8">
         <div class="md:w-1/2 w-full flex flex-wrap">
             <div class="lg:w-auto w-1/6 md:my-auto mr-0 ml-0 align-middle">
-                <img class="profile-pic" alt="Profile picture" src="{{site.data.profile.profile-img}}" />
+                <img class="profile-pic" width="80px" height="80px" alt="Profile picture"
+                    src="{{site.data.profile.profile-img}}" />
             </div>
 
             <div class="lg:w-9/12 w-4/6 my-auto lg:flex lg:flex-wrap">
@@ -82,7 +84,7 @@ layout: default
                             {{site.data.profile.about-me}}
                         </p>
                     </div>
-                </section>               
+                </section>
                 <section class="mt-5 md:mt-2">
                     <h3 class="font-medium text-2xl">Skills</h3>
                     <div>
@@ -190,10 +192,35 @@ layout: default
         </div>
         <div class="w-full mt-2">
             <div class="flex items-center w-full">
-                <img class="mx-auto eevee" alt="Easter egg" src="resources/eevee.png" />
+                <img class="mx-auto eevee" width="14px" height="14px" alt="Easter egg" src="resources/eevee.png" />
             </div>
         </div>
     </footer>
 </body>
 
 </html>
+<style>
+    @font-face {
+        font-display: swap;
+        font-family: "JetBrainsMono-Regular";
+        src: url("../resources/web/woff2/JetBrainsMono-Regular.woff2");
+    }
+
+    @font-face {
+        font-display: swap;
+        font-family: "JetBrainsMono-Italic";
+        src: url("../resources/web/woff2/JetBrainsMono-Italic.woff2");
+    }
+
+    @font-face {
+        font-display: swap;
+        font-family: "JetBrainsMono-Bold";
+        src: url("../resources/web/woff2/JetBrainsMono-Bold.woff2");
+    }
+
+    @font-face {
+        font-display: swap;
+        font-family: "JetBrainsMono-ExtraBold";
+        src: url("../resources/web/woff2/JetBrainsMono-ExtraBold.woff2");
+    }
+</style>

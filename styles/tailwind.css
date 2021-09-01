@@ -1,9 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
-@layer utilities {
-  .change {
-    color: transparent;
-  }
+.step-card{
+  margin: 10px;  
+}
+
+.step-card {  
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 20px;
+  width: 160px;
+  min-height: 50px; 
+}
+
+.step-card.icon img {  
+  width: 30px;
+  height: auto;
+}
+
+.step-card.inactive{
+  border-color:gray;
+  color: gray;
+}
+
+.step-card.success{
+  color: green;
+  border-color: green;
+}
+
+.step-card.progress{
+  color: orange;
+  border-color: orange;
+
+}
+
+.step-card.progress .icon {
+  /* fill: orange; */
+}
+
+.step-card.fail{
+  color: red;  
+  border-color: red;
 }

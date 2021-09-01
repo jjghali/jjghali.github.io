@@ -1,0 +1,16 @@
+[
+    {
+      "school-name": "École de Tecnologie Supérieure (ÉTS)",
+      "website": "http://etsmtl.ca",
+      "degree": "Bachelor in Software Engineering",
+      "start-year": 2015,
+      "graduation-year": null
+    },
+    {
+      "school-name": "Collège de Bois-de-Boulogne",
+      "website": "http://bdeb.qc.ca",
+      "degree": "Diplôme d'études Collégiales (DEC) en techniques de l'informatique",
+      "start-year": 2011,
+      "graduation-year": 2015
+    }
+  ]

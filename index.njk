@@ -1,0 +1,12 @@
+{% extends "_includes/default.njk" %}
+
+{% block title %}It does work{% endblock %}
+
+{% block content %}
+  
+    {% for t in education %}
+        <h1> {{ t["school-name"] }}</h1>
+  
+    {%endfor%}
+  
+{% endblock %}

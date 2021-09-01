@@ -1,0 +1,48 @@
+[
+  {
+    "company-name": "Desjardins",
+    "job-title": "DevOps/Developer (Consultant)",
+    "start-date": "January 2020",
+    "end-date": null,
+    "website": "https://www.desjardins.com/",
+    "tasks": [
+      "Release note and changelog page creation tool coded in Python.",
+      "Added features to an API made with Apollo GraphQL in order to retrieve informations about our development environment.",
+      "Created a CLI application for Atlassian products called atlcli.",
+      "Created a Newman reporter for PowerBI."
+    ]
+  },
+  {
+    "company-name": "Gologic",
+    "job-title": "DevOps/Developer",
+    "start-date": "January 2020",
+    "end-date": null,
+    "website": "https://www.gologic.ca/"
+  },
+  {
+    "company-name": "Logient",
+    "job-title": "Developer/DevOps",
+    "start-date": "June 2018",
+    "end-date": "January 2020",
+    "website": "https://logient.com",
+    "tasks": [
+      "Docker container orchestration.",
+      "CI/CD pipeline creation with Azure DevOps",
+      "Linux Virtual Machine maintenance and automation."
+    ]
+  },
+  {
+    "company-name": "Logient",
+    "job-title": ".NET Developer",
+    "start-date": "February 2017",
+    "end-date": "June 2018",
+    "website": "https://logient.com"
+  },
+  {
+    "company-name": "Logient",
+    "job-title": ".NET Developer (Internship)",
+    "start-date": "January 2016",
+    "end-date": "May 2016",
+    "website": "https://logient.com"
+  }
+]

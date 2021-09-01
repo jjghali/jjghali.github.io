@@ -1,0 +1,35 @@
+{
+  "name": "Joshua Ghali",
+  "page-title": "Joshua Ghali - DevOps",
+  "website": "https://joshuaghali.com",
+  "profile-img": "resources/profile.png",
+  "title": "Web Developer, DevOps and coffee drinker.",
+  "about-me": "I am Josh and I am a Web Developer and a DevOps Specialist. I currently study in Software Engineering at École de technologie supérieure in Montréal.",
+  "twitter-handle": "@jjghali",
+  "skills": [
+    "Python",
+    "Vue.js",
+    "TailwindCSS",
+    "GraphQL",
+    "TypeScript/JavaScript",
+    "Github Actions",
+    "Azure DevOps"
+  ],
+  "socials": [
+    {
+      "name": "Linkedin",
+      "icon": "fa-linkedin",
+      "url": "https://www.linkedin.com/in/jjghali/"
+    },
+    {
+      "name": "Dev.to",
+      "icon": "fa-dev",
+      "url": "https://dev.to/jjghali"
+    },
+    {
+      "name": "Github",
+      "icon": "fa-github",
+      "url": "https://github.com/jjghali"
+    }
+  ]
+}

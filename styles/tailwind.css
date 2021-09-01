@@ -15,9 +15,10 @@
   min-height: 50px; 
 }
 
-.step-card.icon img {  
-  width: 30px;
-  height: auto;
+.step-card > .icon,
+.step-card > .icon svg {  
+  max-width: 28px;
+  max-height: 24px;
 }
 
 .step-card.inactive{
@@ -28,6 +29,11 @@
 .step-card.success{
   color: green;
   border-color: green;
+}
+
+.step-card.success .icon path
+{
+  fill: green;  
 }
 
 .step-card.progress{
